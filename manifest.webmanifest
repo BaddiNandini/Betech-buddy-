@@ -1,0 +1,10 @@
+{
+  "name": "BTech Study Buddy",
+  "short_name": "Study Buddy",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#183b66",
+  "description": "BTech ECE study companion",
+  "icons": []
+}

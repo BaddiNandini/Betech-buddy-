@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#183b66"><meta name="description" content="BTech ECE study companion">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<title>BTech Study Buddy</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brand-icon">🎓</div><div><b>BTech Study Buddy</b><small>ECE • Learn · Practise · Revise</small></div></div>
+  <button id="installBtn" class="install hidden">Install app</button>
+</header>
+<main class="shell">
+  <section class="hero">
+    <div><span class="eyebrow">YOUR STUDY SPACE</span><h1>Study smarter,<br>one unit at a time.</h1><p>Organised notes, exam questions, MCQs and revision for your semester.</p></div>
+    <div class="hero-mark">📚</div>
+  </section>
+  <section class="progress-card">
+    <div class="progress-head"><b>Overall unit progress</b><strong id="progressText">0 / 25</strong></div>
+    <div class="track"><div id="progressBar"></div></div>
+    <small>Mark a unit complete when you finish revising it.</small>
+  </section>
+  <section class="section-head"><div><span class="eyebrow">YOUR SEMESTER</span><h2>Subjects</h2></div><span class="pill">5 subjects · 25 units</span></section>
+  <div id="subjectGrid" class="subject-grid"></div>
+  <section id="workspace" class="workspace hidden">
+    <div class="workspace-top"><button id="backBtn" class="back">← Subjects</button><span id="subjectCode" class="pill"></span></div>
+    <h2 id="unitTitle"></h2><p id="subjectTitle" class="muted"></p>
+    <div id="unitTabs" class="unit-tabs"></div>
+    <div id="unitContent" class="unit-content"></div>
+  </section>
+  <footer>Built as an offline-ready starter project. Add your class notes and verified syllabus material as you study.</footer>
+</main>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
